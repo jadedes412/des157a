@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JS Experimentation 2</title>
+	<style>
+		.red {background-color: red; }
+        .orange {background-color: orange;}
+        .yellow {background-color: yellow;}
+        .green {background-color: green;}
+        .blue {background-color: blue;}
+        .purple {background-color: purple}        
+    </style>
+</head>
+
+<body>
+	<main>
+		<header>
+
+			<h1>JS Experimentation 2</h1>
+
+		</header>
+        <footer>
+		</footer>
+    </main>
+    <!-- this program asks the user if each color in the array is their favorite. if they answer yes to one of the colors, the background of the page becomes that color-->
+    <script>
+            var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
+            for (var i=0; i<colors.length; i++){
+                var yourcolor = prompt("Is " + colors[i] + " your favorite color?");
+                if (yourcolor == "yes"){
+                    document.body.style.backgroundColor = colors[i];
+                    break;
+                }
+            }
+</script>
+</body>
+</html>
