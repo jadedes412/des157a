@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.csss" rel="stylesheet">
+        <title>Madlibs V1</title>
+        <link href="styles.css" rel="stylesheet">
+
+        <!---fonts--->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    </head>
+    
+    <body>
+        <h1>MadLibs Love Edition</h1>
+        
+        <section id="form-part1">
+            <article>
+                <form method="post" action="processor.php">
+                    <label for="adjective1">adjective</label>
+                    <input type="text" name="adjective1" id="adjective1">
+                </form>
+            </article>
+            <article>
+                <form method="post" action="processor.php">
+                    <label for="person">person</label>
+                    <input type="text" name="person" id="person">
+                </form>
+            </article>
+            <article>
+                <form method="post" action="processor.php">
+                    <label for="number">number</label>
+                    <input type="number" name="number" id="number">
+                </form>
+            </article>
+            <article>
+                <form method="post" action="processor.php">
+                    <label for="place1">place</label>
+                    <input type="text" name="place1" id="place1">
+                </form>
+            </article>
+            <input type="submit" name="next" value="next">
+        </section>
+
+        <section id="form-part2" class="hidden">
+            <article>
+                    <form method="post" action="processor.php">
+                        <label for="bodypart">body part</label>
+                        <input type="text" name="bodypart" id="bodypart">
+                    </form>
+                </article>
+                <article>
+                    <form method="post" action="processor.php">
+                        <label for="adjective2">person</label>
+                        <input type="text" name="adjective2" id="adjective2">
+                    </form>
+                </article>
+                <article>
+                    <form method="post" action="processor.php">
+                        <label for="place2">another place</label>
+                        <input type="text" name="place2" id="place2">
+                    </form>
+                </article>
+                <article>
+                    <form method="post" action="processor.php">
+                        <label for="food">food</label>
+                        <input type="text" name="food" id="food">
+                    </form>
+                </article>
+                <input type="submit" name="next" value="next">
+    </section>
+
+    </body>
+</html>
