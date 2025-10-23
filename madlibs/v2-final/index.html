@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+        <title>Madlibs V1</title>
+        <link href="styles.css" rel="stylesheet">
+        <script src="script.js" defer></script>
+
+        <!---fonts--->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    </head>
+    
+    <body>
+        <article id="intro">
+            <h1>MadLibs <span style="font-family: Kaushan Script, cursive; font-size: 2em;">Love </span> Edition</h1>
+            <form id="name-box">
+                <input type="text" id="name" required placeholder="enter your name">
+            </form>
+            <button id="start">Get started!</button>
+        </article>
+
+        <section id="form-part1" class="hidden">
+            <h2>Enter the following words: </h2>
+            <form id="madlibs-part1">
+                <input type="text" id="adj1" required placeholder="adjective">
+                <input type="text" id="person"  required placeholder="person">
+                <input type="number" id="number" required placeholder="number">
+                <input type="text" id="place1" required placeholder="place">
+            </form>
+            <button id="next1">next</button>
+
+        </section>
+
+             <section id="form-part2" class="hidden">
+                <h2>Enter the following words: </h2>
+                <form id="madlibs-part2">
+                    <input type="text" id="bodypart" required placeholder="body part">
+                    <input type="text" id="adj2" required placeholder="adjective">
+                    <input type="text" id="place2" required placeholder="another place">
+                    <input type="text" id="food" required placeholder="food">
+                </form>
+                <button id="next2">next</button>
+            </section>
+
+            <section id="form-part3" class="hidden">
+                <h2>Enter the following words: </h2>
+                <form id="madlibs-part3">
+                    <input type="text" id="adj3" required placeholder="adjective">
+                    <input type="text" id="adj4" required placeholder="another adjective">
+                    <input type="text" id="adj5" required placeholder="ANOTHER adjective">
+                    <input type="text" id="adverb" required placeholder="adverb">
+                </form>
+                <button id="submit">submit!</button>
+            </section>
+
+
+            <section id="madlib" class="hidden">
+                <article id="letter">
+                
+                </article>
+            </section>
+            
+        <footer>
+            <p>made by Jade Dang</p>
+        </footer>
+    </body>
+</html>

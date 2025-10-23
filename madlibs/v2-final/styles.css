@@ -1,0 +1,134 @@
+/** hide and show **/
+.hidden {
+    opacity: 0;
+}
+.showing {
+    display: block;
+    opacity: 1;
+}
+
+.fade {
+    transition: opacity 0.5 ease;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/background.svg);
+    background-size: cover;
+}
+
+/** intro page styling **/
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+#name {
+    width: 200px;
+
+}
+
+#start {
+    padding: 10px;
+    transition: transform 0.2s ease-in-out; 
+    background-color: rgb(105, 6, 6);
+    color: white;
+    border-radius: 10px;
+}
+
+#start:hover {
+    transform: scale(1.1);    
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+
+/** styling form section overlays **/ 
+section {
+    font-family: "Instrument Sans", sans-serif;
+    text-align: center;
+
+}
+
+h2 {
+}
+
+#form-part1, #form-part2, #form-part3 {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(105, 6, 6);
+    border-radius: 20px;
+    color: white;    
+}
+
+/** next button styling **/
+#next1, #next2, #next3 {
+    margin: auto;
+}
+
+
+/** form spacing **/
+
+input {
+    display: block;  
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+fieldset input, fieldset label {
+    display: inline;
+}
+
+
+/** result madlib letter **/
+
+#madlib {
+    background-image: url(images/letter-scroll.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: none;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+}
+
+#letter {
+    position: relative;
+    top: 25%;
+    left: 15%;
+    width: 20vw;
+    line-height: 1.8em;
+    font-size: 1.3em;
+}
+
+
+
+footer {
+    font-family: "Instrument Sans", sans-serif;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 2px;
+    /*  background-color: rgb(255, 255, 255); */
+}

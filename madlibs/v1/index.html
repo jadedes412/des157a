@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.csss" rel="stylesheet">
+        <title>Madlibs V1</title>
+        <link href="styles.css" rel="stylesheet">
+
+        <!---fonts--->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    </head>
+    
+    <body>
+        <article id="intro">
+            <h1>MadLibs <span style="font-family: Kaushan Script, cursive; font-size: 2em;">Love </span> Edition</h1>
+            <button id="start">Generate my love letter!</button>
+        </article>
+
+        <section id="form-part1" class="hidden">
+            <form id="madlibs-part1">
+                <label for="adjective1">adjective</label>
+                <input type="text" name="adjective1" id="adjective1">
+                <label for="person">person</label>
+                <input type="text" name="person" id="person">
+                <label for="number">number</label>
+                <input type="number" name="number" id="number">
+                <label for="place1">place</label>
+                <input type="text" name="place1" id="place1">
+            </form>
+            <input type="submit" name="next" value="next">
+        </section>
+
+             <section id="form-part2" class="hidden">
+                <form id="madlibs-part2">
+                    <label for="bodypart">body part</label>
+                    <input type="text" name="bodypart" id="bodypart">
+                    <label for="adjective2">person</label>
+                    <input type="text" name="adjective2" id="adjective2">
+                    <label for="place2">another place</label>
+                    <input type="text" name="place2" id="place2">
+                    <label for="food">food</label>
+                    <input type="text" name="food" id="food">
+                </form>
+                <input type="submit" name="next" value="next">
+            </section>
+
+            <section id="letter" class="hidden">
+                
+            </section>
+        <footer>
+            <p>made by Jade Dang</p>
+        </footer>
+    </body>
+</html>
