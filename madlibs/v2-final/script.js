@@ -11,6 +11,7 @@
     
         const letter = document.querySelector('#letter');
         const madlib = document.querySelector('#madlib');
+        const newMadLib = document.querySelector('#new');
        
 
         // make sure every field is filled //
@@ -69,6 +70,8 @@
         part1.className = "hidden";
         part2.className = "hidden";
         part3.className = "hidden";
+        newMadLib.className = "showing";
+
 
 
         });

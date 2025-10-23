@@ -73,8 +73,20 @@ section {
     margin: auto;
     padding: 20px;
     background-color: rgb(105, 6, 6);
-    border-radius: 20px;
+    border-radius: 70px;
     color: white;    
+    transition: transform 0.2s ease-in-out; 
+
+}
+
+#form-part1:hover {
+    transform: scale(1.01);
+}
+#form-part2:hover {
+    transform: scale(1.01);
+}
+#form-part3:hover {
+    transform: scale(1.01);
 }
 
 /** next button styling **/
@@ -115,7 +127,10 @@ fieldset input, fieldset label {
 
 #madlib h2 {
     position: relative;
-    text-align: center;
+    top: 16%;
+    left: -25%;
+    font-family: Kaushan Script, cursive;
+    font-size: 2em;
 }
 
 #letter {
