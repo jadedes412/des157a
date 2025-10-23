@@ -1,5 +1,6 @@
 /** hide and show **/
 .hidden {
+    display: none;
     opacity: 0;
 }
 .showing {
@@ -61,8 +62,7 @@ section {
 
 }
 
-h2 {
-}
+
 
 #form-part1, #form-part2, #form-part3 {
     position: absolute;
@@ -113,9 +113,14 @@ fieldset input, fieldset label {
     margin: auto;
 }
 
+#madlib h2 {
+    position: relative;
+    text-align: center;
+}
+
 #letter {
     position: relative;
-    top: 25%;
+    top: 15%;
     left: 15%;
     width: 20vw;
     line-height: 1.8em;

@@ -24,9 +24,7 @@
     
         startBtn.addEventListener('click', function(event){
         event.preventDefault();
-        part1.className = "";
-        return name;
-        
+        part1.className = "";        
     });
 
     const nextBtn1 = document.querySelector('#next1');
