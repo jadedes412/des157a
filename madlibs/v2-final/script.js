@@ -64,7 +64,7 @@
         const adverb = document.querySelector('#adverb').value;
 
 
-        const story = `Dear my ${adj1} ${person}, \n\nHappy ${number} year anniversary! \nWhen we first met at ${place1}_ and locked ${bodypart}s, I knew that you would be in my life for a ${adj2} time. I love our dates at the${place2} and eating our favorite ${food}. Life would not be the same without your ${adj3} support and your ${adj4}  heart. \nI look forward to many more ${adj5} years with you! \n\n${adverb} yours, \n${name}`;
+        const story = `Dear my ${adj1} ${person}, \n\nHappy ${number} year anniversary! \nWhen we first met at ${place1} and locked ${bodypart}s, I knew that you would be in my life for a ${adj2} time. I love our dates at the${place2} and eating our favorite ${food}. Life would not be the same without your ${adj3} support and your ${adj4}  heart. \nI look forward to many more ${adj5} years with you! \n\n${adverb} yours, \n${name}`;
         letter.textContent = story;
         madlib.className = "";
         part1.className = "hidden";

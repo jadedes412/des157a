@@ -25,17 +25,17 @@ header {
 
 main {
     width: 800px;
-    background-color: #C4DACF;
     align-items: center;
     margin: auto;
 }
 
 article {
+    background-color: #C4DACF;
     padding: 40px;
     font-family: "Cutive", serif;
     line-height: 1.5em;
     border: 2px solid #998DA0;
-
+    margin-bottom: 30px;
 }
 
 article h3 {
