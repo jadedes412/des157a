@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+        <!-- <meta name="viewport" content="width=device-width", initial-scale="1.0">  -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kranky&family=Labrada:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+        <title>Every Picture Experiment</title>
+    </head>
+    <body>
+        <article id="intro-page" class="showing">
+            <div class="title-row"> 
+                <img src="images/cat-1.png" class="intro-img">
+                <h1 class="centered-title">Fergie's Favorite <br>Loaf Spots</h1>
+                <img src="images/cat-2.png" class="intro-img">
+            </div>
+            <p>find my cat’s favorite spots to loaf around my room</p>
+            <button id="start-btn">get started!</button>
+        </article>
+
+        <section id="picture" class="hidden">
+            <div class="room">
+                <img src="images/background.png">
+                <svg width="1512" height="982" viewBox="0 0 1512 982" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="100" y="605" width="225" height="238" fill="#5F5F5F" id="beanbag"/>
+                    <rect x="404" y="759" width="470" height="128" fill="#5F5F5F" id="rug"/>
+                    <rect x="1003" y="560" width="175" height="46" fill="#5F5F5F" id="blanket"/>
+                    <rect x="1163" y="439" width="84" height="71" fill="#5F5F5F" id="pillow"/>
+                    <rect x="719" y="469" width="91" height="45" fill="#5F5F5F" id="desk"/>
+                    <rect x="35" y="467" width="133" height="73" fill="#5F5F5F" id="window"/>
+                    <rect x="1122" y="624" width="306" height="44" fill="#5F5F5F" id="drawers"/>
+                </svg>
+            </div>
+
+            <div id="picture-instructions">
+                <p>hover on different objects to see where fergie loafs! click when she loafs to explore more...</p>
+            </div>
+        </section>
+
+
+        <div id="hotspot-box" class="hidden">
+            <div class="hotspot-overlay">
+                <button class="close-overlay">x</button>
+                <img id="hotspot-image" src="images/desk-cat.png" alt="hotspot image">
+                <p id="hotspot-image-caption">Fergie loves loafing here.</p>
+            </div>
+        </div>
+
+        <div id="cursor-cat">
+            <img id="cursor-cat-1" src="images/cursor-cat-1.svg" alt="cursor cat default">
+            <img id="cursor-cat-2" src="images/cursor-cat-2.svg" alt="cursor cat hover">
+            
+        </div>
+        
+        <script src="script.js"></script>
+
+    </body>
+</html>

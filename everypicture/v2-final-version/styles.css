@@ -1,0 +1,230 @@
+.hidden {
+    display: none;
+    opacity: 0;
+}
+.showing {
+    display: block;
+    opacity: 1;
+}
+
+/*** general styling ***/
+
+body {
+    background-color: #E2CACA;
+}
+
+h1 {
+    font-family: "Kranky", serif;
+    font-weight: 400;
+    font-size: 4em;
+    font-style: normal;
+}
+
+p {
+    font-family: "Labrada", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 1.7em;
+}
+
+/*** intro styling ***/
+
+#intro-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.title-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+    margin-top: 40px;
+}
+
+.centered-title {
+    text-align: center;
+    margin: 0;
+}
+
+.intro-img {
+    width: 200px; 
+    height: auto;
+}
+
+
+#start-btn {
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #D3A8A8;
+    font-family: "Labrada", serif;
+    font-size: 1.2em;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out; 
+    margin-top: 20px;
+    border: none;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#start-btn:hover {
+    transform: scale(1.1);    
+}
+
+/*** bg picture styling ***/
+
+#picture {
+    position: fixed;
+    inset: 0; /*** top:0; right:0; bottom:0; left:0 ***/
+    /*** display: flex; ***/
+    z-index: 999;
+}
+
+#picture-instructions {
+    position: absolute;
+    top: 20px;
+    left: 48%;
+    transform: translateX(-50%);
+    background: #dbb7b7;
+    color: #000000;
+    padding: 4px 15px;
+    border-radius: 12px;
+    font-family: "Labrada", serif;
+    font-size: 0.6rem;
+    text-align: center;
+    max-width: 50%;
+    pointer-events: none; 
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#picture.showing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.room {
+    position: relative;
+    width: min(100vw, 1512px);  
+    max-height: 100vh;
+    aspect-ratio: 1512 / 982;
+}
+
+
+.room img,
+.room svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.room svg {
+    opacity: 0;
+}
+
+
+/*** cat cursor!!! ***/
+
+.cursor-image {
+    cursor: none; 
+}
+
+#cursor-cat {
+    position: fixed;
+    width: 100px;          
+    height: 72.56px;
+    pointer-events: none; 
+    transform: translate(-50%, -50%); 
+    z-index: 1000;
+    display: none;
+}
+
+#cursor-cat img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#cursor-cat-1 {
+    display: block;
+}
+
+#cursor-cat-2 {
+    display: none;
+}
+
+/* hotspot hover -> cat loaf */
+.hotspot-hover #cursor-cat-1 {
+    display: none;
+}
+
+.hotspot-hover #cursor-cat-2 {
+    display: block;
+}
+
+/*** hotspot overlay box ***/
+
+#hotspot-box {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.hidden#hotspot-box {
+    display: none;
+}
+
+#hotspot-box, #hotspot-box * {
+    cursor: auto;
+}
+
+.hotspot-overlay {
+    position: relative;
+    background: #fff;
+    width: 33vw;         
+    max-width: 500px;
+    height: 75vh;       
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    overflow: hidden;
+}
+
+.hotspot-overlay img {
+    margin-top: 20px;
+    max-width: 100%;
+    max-height: 80%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.hotspot-overlay p {
+    margin: 0;
+    text-align: center;
+    font-family: "Labrada", serif;
+    font-size: 1rem;
+}
+
+.close-overlay {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    border: none;
+    background: transparent;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
