@@ -1,0 +1,24 @@
+header {
+    margin: auto;
+    font-family: "Barrio", system-ui;
+    padding: 30px;
+    font-size: 1.5em;
+    text-align: center;
+
+}
+
+main {
+    width: 800px;
+    align-items: center;
+    margin: auto;
+}
+
+article {
+    background-color: #C4DACF;
+    padding: 40px;
+    font-family: "Cutive", serif;
+    line-height: 1.5em;
+    border: 2px solid #998DA0;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
