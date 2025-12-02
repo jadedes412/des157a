@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of PAWS</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+     <main class="start-page">
+        <header class="title-area">
+            <p class="title-small">game of</p>
+            <h1 class="title-main">PAWS <span class="paw-icon">🐾</span></h1>
+        </header>
+
+        <section class="instructions">
+            <p>
+                <strong>Instructions:</strong>
+                There are two players. The player whose turn it is rolls the dice. 
+                The total of the roll is added to the current player's score, unless either die comes up as a "one". 
+                If this happens, this player's turn is over, and it is the other player's turn. After each roll, 
+                the current player can either roll again (as long as a "one" was not rolled) or pass to the other player. 
+                The first player to get 30 points or higher wins.
+            </p>
+        </section>
+
+        <section class="player-names">
+            <form class="names-form">
+                <div class="name-field">
+                    <label for="player1">player 1</label>
+                    <input id="player1" name="player1" type="text" placeholder="name">
+                </div>
+
+                <div class="name-field">
+                    <label for="player2">player 2</label>
+                    <input id="player2" name="player2" type="text" placeholder="name">
+                </div>
+            </form>
+        </section>
+
+        <section class="start-button-section">
+            <button class="start-button" type="button">
+                let’s go!
+            </button>
+        </section>
+    </main>
+    
+</body>
+</html>
