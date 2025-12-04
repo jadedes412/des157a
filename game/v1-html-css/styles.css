@@ -1,8 +1,17 @@
 body {
     margin: 0;
-    font-family: "Gill Sans", "Helvetica Neue", Arial, sans-serif;
-    background-color: #cfeeb1;
+    font-family: "Kiwi Maru", serif;
+    background-color: #CDEDBE;
     color: #222222;
+}
+
+label {
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+input {
+    padding: 5px;
 }
 
 .start-page {
@@ -17,18 +26,20 @@ body {
 .title-area {
     text-align: center;
     margin-bottom: 30px;
+    font-family: "Kavoon", serif;
 }
 
 .title-small {
-    font-size: 32px;
+    font-family: "Kiwi Maru", serif;
+    font-size: 80px;
+    font-weight: 100;
     letter-spacing: 2px;
     margin: 0;
 }
 
 .title-main {
-    font-size: 72px;
+    font-size: 130px;
     margin: 5px 0 0 0;
-    font-family: "Impact", "Arial Black", sans-serif;
 }
 
 .paw-icon {
@@ -53,7 +64,7 @@ body {
 .names-form {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 350px;
     flex-wrap: wrap;
 }
 
