@@ -136,8 +136,7 @@
         startPage.classList.add("hidden");
         avatarPage.classList.add("hidden");
         gamePage.classList.remove("hidden");
-        winPage.classList.add("hidden");
-        losePage.classList.add("hidden");
+        
     }
 
     function updatePlayer1Avatar() {

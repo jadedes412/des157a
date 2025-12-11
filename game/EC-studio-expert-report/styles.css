@@ -1,0 +1,53 @@
+
+#banner {
+    background-image: url('images/journal-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    margin: auto;
+    font-family: "Barrio", system-ui;
+    padding: 30px;
+    font-size: 1.5em;
+    text-align: center;
+
+}
+
+img {
+    margin-top: 30px;
+    align-items: center;
+}
+
+figcaption {
+    font-size: .8em;
+    font-weight: 100;
+}
+
+
+main {
+    width: 800px;
+    align-items: center;
+    margin: auto;
+}
+
+article {
+    background-color: #C4DACF;
+    padding: 40px;
+    font-family: "Cutive", serif;
+    line-height: 1.5em;
+    border: 2px solid #998DA0;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+article h3 {
+    font-size: 1.5em;
+    font-style: bold;
+}
