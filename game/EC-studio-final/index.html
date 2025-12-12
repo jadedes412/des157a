@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--meta stuff-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+    <script src="./script.js" defer></script>
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&family=Kiwi+Maru&display=swap" rel="stylesheet">
+
+    
+    <title>Game of PAWS</title>
+</head>
+<body>
+    <!--landing page-->
+     <main class="start-page">
+        <header class="title-area">
+            <p class="title-small">game of</p>
+            <h1 class="title-main">PAWS <span class="paw-icon">🐾</span></h1>
+        </header>
+
+        <section class="player-names">
+            <form class="names-form">
+                <div class="name-field">
+                    <label for="player1">player 1</label>
+                    <input id="player1" name="player1" type="text" placeholder="name">
+                </div>
+
+                <div class="name-field">
+                    <label for="player2">player 2</label> 
+                    <input id="player2" name="player2" type="text" placeholder="name">
+                </div>
+            </form>
+        </section>
+
+        <section class="start-button-section">
+            <button class="start-button" type="button">
+                let’s go!
+            </button>
+        </section>
+
+        <section class="howto-button-section">
+            <button class="howto-button" type="button">how to play</button>
+        </section>
+    </main>
+
+    <!-- how to play overlay -->
+    <section class="howto-overlay hidden">
+        <div class="howto-card">
+            <button type="button" class="howto-close">✕</button>
+
+            <h2 class="howto-title">how to play</h2>
+
+            <div class="howto-content">
+                <p>There are two players. The player whose turn it is pounces on two random toys. Each toy is worth a certain number of points:</p>
+
+            <ul class="howto-list">
+            <li class="howto-row">
+                <div class="howto-icon-block">
+                    <img src="images/feather-1.png" alt="broken toy" class="howto-icon">
+                    <span class="howto-icon-label">broken toy</span>
+                </div>
+                <p class="howto-row-text">= <strong>0 points</strong> (player turn OVER!)</p>
+            </li>
+
+            <li class="howto-row">
+                <div class="howto-icon-block">
+                    <img src="images/worm-2.png" alt="worm toy" class="howto-icon">
+                    <span class="howto-icon-label">worm</span>
+                </div>
+                <p class="howto-row-text">= <strong>2 points</strong></p>
+            </li>
+
+            <li class="howto-row">
+                <div class="howto-icon-block">
+                    <img src="images/yarn-3.png" alt="yarn toy" class="howto-icon">
+                    <span class="howto-icon-label">yarn</span>
+                </div>
+                <p class="howto-row-text">= <strong>3 points</strong></p>
+            </li>
+
+            <li class="howto-row">
+                <div class="howto-icon-block">
+                    <img src="images/duck-4.png" alt="duck toy" class="howto-icon">
+                    <span class="howto-icon-label">duck</span>
+                </div>
+                <p class="howto-row-text">= <strong>4 points</strong></p>
+            </li>
+
+            <li class="howto-row">
+                <div class="howto-icon-block">
+                    <img src="images/mouse-5.png" alt="mouse toy" class="howto-icon">
+                    <span class="howto-icon-label">mouse</span>
+                </div>
+                <p class="howto-row-text">= <strong>5 points</strong></p>
+            </li>
+
+            <li class="howto-row">
+                <div class="howto-icon-block">
+                    <img src="images/fish-6.png" alt="fish toy" class="howto-icon">
+                    <span class="howto-icon-label">fish</span>
+                </div>
+                <p class="howto-row-text">= <strong>6 points</strong></p>
+            </li>
+        </ul>
+                <p>The total of the roll is added to the current player's score, unless a broken toy appears. If both toys are broken, that player immediately loses.</p>
+
+                <p>After each roll, the player can pounce again or skip their turn. The first player to reach <strong>30 points or higher</strong> wins.</p>
+            </div>
+        </div>
+    </section>
+
+<!--choose avatar page-->
+<main class="avatar-page hidden">
+    <header class="title-area">
+        <p class="title-small">game of</p>
+        <h1 class="title-main">PAWS <span class="paw-icon">🐾</span></h1>
+    </header>
+
+    <section class="avatar-heading">
+        <h2 class="avatar-title">select your avatar!</h2>
+    </section>
+
+    <section class="avatar-select-area">
+        <!--player 1 avatar-->
+        <div class="avatar-player">
+            
+            <p class="avatar-player-label player1-display">player 1</p>
+
+            <div class="avatar-controls">
+                <button type="button" class="avatar-arrow avatar1-left"><</button>
+
+                <img
+                    src="images/gcat-left-default.png"
+                    alt="player 1 cat"
+                    class="avatar-image avatar1-image"
+                >
+
+                <button type="button" class="avatar-arrow avatar1-right">></button>
+            </div>
+        </div>
+        <!--player 1 avatar-->
+        <div class="avatar-player">
+            <p class="avatar-player-label player2-display">player 2</p>
+
+            <div class="avatar-controls">
+                <button type="button" class="avatar-arrow avatar2-left"><</button>
+
+                <img
+                    src="images/gcat-right-default.png"
+                    alt="player 2 cat"
+                    class="avatar-image avatar2-image"
+                >
+
+                <button type="button" class="avatar-arrow avatar2-right">></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="play-button-section">
+        <button type="button" class="play-button">play!</button>
+    </section>
+</main>
+
+<!--game page-->
+<main class="game-page hidden">
+    <header class="title-area">
+        <p class="title-small">game of</p>
+        <h1 class="title-main">PAWS <span class="paw-icon">🐾</span></h1>
+    </header>
+
+    <section class="game-area">
+
+        <!--player 1 area-->
+        <div class="player-section player1-section">
+            <div class="viewfinder player1-viewfinder hidden"></div>
+            <img class="player-cat player1-cat" src="" alt="player 1 cat">
+
+            <div class="player-info">
+                <p class="player-name player1-name"></p>
+                <p class="player-score player1-score">0</p>
+            </div>
+        </div>
+
+        <!--center stuff (cat toys and buttons)-->
+        <div class="center-section">
+            <p class="instruction-text"> </p>
+
+            <div class="toy-results hidden">
+                <div class="toy-area">
+                    <img class="toy-image toy1" src="">
+                    <p class="toy-points toy1-points"></p>
+                </div>
+
+                <div class="toy-area">
+                    <img class="toy-image toy2" src="">
+                    <p class="toy-points toy2-points"></p>
+                </div>
+            </div>
+
+            <button class="pounce-btn">
+                <span class="paw-icon-btn">🐾</span>
+                <span class="pounce-text">pounce</span>
+            </button>
+            <button class="skip-btn">skip turn</button>
+        </div>
+
+        <!--player 2 area-->
+        <div class="player-section player2-section">
+            <div class="viewfinder player2-viewfinder hidden"></div>
+            <img class="player-cat player2-cat" src="" alt="player 2 cat">
+
+            <div class="player-info">
+                <p class="player-name player2-name"></p>
+                <p class="player-score player2-score">0</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--you win page-->
+<main class="win-page hidden">
+    <h1 class="win-message"></h1>
+    <img id="winCat" class="result-cat" src="">
+    <button id="replay-win" class="replay-button">play again!</button>
+</main>
+
+<!--you lost page-->
+<main class="lose-page hidden">
+    <h1 class="lose-message"></h1>
+    <img id="loseCat" class="result-cat" src="">
+    <button id="replay-lose" class="replay-button">play again!</button>
+</main>
+    
+</body>
+
+<footer>audio source: pixabay.com</footer>
+</html>

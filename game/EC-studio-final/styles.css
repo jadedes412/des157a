@@ -1,0 +1,563 @@
+/*  hide and show */
+.start-page.hidden,
+.avatar-page.hidden,
+.game-page.hidden, .win-page.hidden,
+.lose-page.hidden, .viewfinder.hidden, .howto-overlay.hidden {
+    display: none;
+}
+
+.toy-results.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* general */
+body {
+    margin: 0;
+    font-family: "Kiwi Maru", serif;
+    color: #222222;
+    background-image: url("images/bg.png");
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+label {
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+input {
+    padding: 5px;
+}
+
+/* start page styling */
+.start-page {
+    min-height: 100vh;
+    padding: 60px 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.title-area {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Kavoon", serif;
+}
+
+.title-small {
+    font-family: "Kiwi Maru", serif;
+    font-size: 80px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.title-main {
+    font-size: 130px;
+    margin: 5px 0 0 0;
+}
+
+.paw-icon {
+    font-size: 150px;
+    vertical-align: middle;
+}
+
+.instructions {
+    max-width: 900px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.player-names {
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.names-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 350px;
+    flex-wrap: wrap;
+}
+
+.name-field {
+    flex: 1 1 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.player-field label {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.player-field input {
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+
+.player-field input:focus {
+    outline: 2px solid #b46ea6;
+}
+
+.start-button-section {
+    margin-top: 10px;
+}
+
+.start-button {
+    padding: 14px 60px;
+    border-radius: 40px;
+    border-width: 5px;
+    border-color: #882359;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #bb60a6;
+    color: #ffffff;
+    transition: transform 0.1s ease-in-out;
+}
+
+.start-button:hover {
+    transform: scale(1.05);
+}
+
+/* instructional overlay styling!! */
+.howto-button-section {
+    margin-top: 30px;
+}
+
+.howto-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #333333;
+}
+
+/* overlay */
+.howto-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.howto-card {
+    background-color: #DDF6C6;
+    border-radius: 40px;
+    padding: 40px 70px;
+    max-width: 750px;
+    width: 85%;
+    max-height: 85vh;
+    overflow-y: auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    position: relative;
+    box-sizing: border-box;
+}
+
+.howto-title {
+    font-family: "Kiwi Maru", serif;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.howto-content {
+    font-size: 16px;
+    line-height: 1.3;
+    margin-top: 10px;
+}
+
+.howto-list {
+    margin: 10px 0 18px 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.howto-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 8px;
+}
+
+.howto-icon-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+}
+
+.howto-icon {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    display: block;
+}
+
+.howto-icon-label {
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+.howto-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+
+/* avatar page styling */
+.avatar-page {
+    min-height: 100vh;
+    padding: 60px 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.avatar-heading {
+    margin-bottom: 40px;
+}
+
+.avatar-title {
+    font-size: 60px;
+    margin: 0;
+    text-align: center;
+}
+
+.avatar-page .title-small {
+    font-size: 30px;   
+}
+
+.avatar-page .title-main {
+    font-size: 70px;   
+}
+
+.avatar-page .paw-icon {
+    font-size: 70px;  
+}
+
+.avatar-select-area {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 160px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.avatar-player {
+    text-align: center;
+}
+
+.avatar-player-label {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.avatar-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.avatar-image {
+    max-width: 260px;
+    height: auto;
+}
+
+.avatar-arrow {
+    border: none;
+    background: none;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px 16px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.avatar-arrow:hover {
+    transform: scale(1.1);
+}
+
+.play-button-section {
+    margin-top: 10px;
+} 
+
+.play-button {
+    padding: 14px 60px;
+    border-radius: 40px;
+    border-width: 5px;
+    border-color: #882359;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #bb60a6;
+    color: #ffffff;
+    transition: transform 0.1s ease-in-out;
+}
+
+.play-button:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* ALL THE GAME STUFFFFF STYLES*/
+
+/* game page styling */
+.game-page {
+    min-height: 100vh;
+    padding: 60px 20px 40px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-area {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1300px;
+    margin-top: 40px;
+}
+
+.game-page .title-area {
+    margin-bottom: 0;
+}
+
+.game-page .title-small {
+    font-size: 30px;   
+}
+
+.game-page .title-main {
+    font-size: 70px;   
+}
+
+.game-page .paw-icon {
+    font-size: 70px;  
+}
+
+/* player sections */
+.player-section {
+    width: 30%;
+    text-align: center;
+    position: relative;
+}
+
+.player-cat {
+    /* max-width: 330px;
+    height: auto; */
+    width: 330px;
+    height: 260px;         
+    object-fit: contain;   
+    object-position: bottom; 
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.player-cat[src$="-play.gif"] {
+    transform: scale(1.8) translateY(40px);
+    transform-origin: bottom center;
+}
+
+/* player name + scores sections */
+.player-info {
+    /* position: relative; */
+}
+
+.player-name {
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+.player-score {
+    font-size: 90px;
+    margin-top: 10px;
+    font-family: "Kavoon", serif;
+}
+
+/* viewfinder (turn tracker) */
+.viewfinder {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 88%;
+    border: 4px dashed #d64c96;
+    border-radius: 30px;
+    pointer-events: none; */
+    display: none;
+}
+
+/* center section styling */
+.center-section {
+    text-align: center;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instruction-text {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+/* toy results */
+.toy-results {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 10px;
+    min-height: 130px;   
+    align-items: center;
+}
+
+.toy-area {
+    text-align: center;
+}
+
+.toy-image {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;   /* fit inside the square without stretching */
+    display: block;
+}
+
+.toy-points {
+    font-size: 26px;
+    color: #b34c9b;
+    margin-top: 8px;
+}
+
+/* button styling */
+.pounce-btn {
+    padding: 25px 50px;
+    background-color: #fbd8ef;
+    border-radius: 35px;
+    border-width: 5px;
+    border-color: #c070a4;
+    cursor: pointer;
+    transition: transform 0.15s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.paw-icon-btn {
+    font-size: 50px;
+}
+
+.pounce-text {
+    font-size: 18px;
+}
+
+.pounce-btn:hover {
+    transform: scale(1.08);
+}
+
+.skip-btn {
+    margin-top: 18px;
+    padding: 16px 50px;
+    background-color: #d6c3f7;
+    border-radius: 30px;
+    border-width: 5px;
+    border-color: #8669b6;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.15s ease-in-out;
+}
+
+.skip-btn:hover {
+    transform: scale(1.06);
+}
+
+/* win/lose */
+.win-page, .lose-page {
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 40px 20px 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 60px; 
+
+    text-align: center;
+}
+
+.result-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.result-cat {
+    width: 500px;
+    max-width: 80vw;
+    max-height: 30vh;
+    display: block;
+    margin: 0 auto 40px auto;
+    object-fit: contain;
+}
+
+.replay-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 20px 50px;
+    border-radius: 40px;
+    border-width: 5px;
+    border-color: #882359;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #bb60a6;
+    color: #ffffff;
+    transition: transform 0.1s ease-in-out;
+}
+
+.replay-button:hover {
+    transform: scale(1.05);
+}
+
+
+footer {
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 15px;
+}
